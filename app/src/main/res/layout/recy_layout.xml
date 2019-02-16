@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#ffffff"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="20dp"
+    android:layout_width="100dp"
+    android:layout_height="250dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_one"
+            fresco:roundAsCircle="false"
+            fresco:roundedCornerRadius="20dp"
+            android:layout_width="140dp"
+            android:layout_height="150dp" />
+        <TextView
+            android:id="@+id/name_one"
+            android:layout_marginTop="10dp"
+            android:layout_width="140dp"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/name_price"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
